@@ -51,6 +51,21 @@ class BookDetailViewModel(application: Application): AndroidViewModel(applicatio
             bookLD.value =
                 Book("105", "Spiderman", "5", "Spiderman merupakan tokoh yang menggambarkan laba-laba", "https://cdn.marvel.com/u/prod/marvel/i/mg/f/10/598363848588e/detail.jpg")
         }
+        else if (id == "106")
+        {
+            bookLD.value =
+                Book("106", "Spiderman 2", "4.5", "Spiderman 2 dimana Peter belum melupakan janjinya pada Ayah Gwen yang tewas akibat serangan The Lizard", "https://cdn.marvel.com/u/prod/marvel/i/mg/f/10/598363848588e/detail.jpg")
+        }
+        else if (id == "107")
+        {
+            bookLD.value =
+                Book("107", "Mr.Bean", "4", "Mr. bean merupakan sosok aktris yang memiliki sifat lucu sehingga disukai oleh banyak kalangan masyarakat", "https://cdn-2.tstatic.net/bangka/foto/bank/images/mr-bean_20160909_053220.jpg")
+        }
+        else if (id == "108")
+        {
+            bookLD.value =
+                Book("108", "Bernard Bear", "4", "Kartun ini menceritakan seorang beruang yang bernama Bernard yang selalu sial di setiap apa yang dia ingin lakukan", "http://1.bp.blogspot.com/_PjKhx8tzVLI/TKBe7Ll2pMI/AAAAAAAACSs/7UQYdPVhf2Q/s200/bernard.jpg")
+        }
         bookLoadErrorLD.value = false
         loadingLD.value = false
 

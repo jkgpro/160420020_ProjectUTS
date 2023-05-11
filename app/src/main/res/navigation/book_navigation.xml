@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/book_navigation"
-    app:startDestination="@id/bookListFragment">
+    app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/bookListFragment"
         android:name="com.example.s160420020_projectuts.view.LibraryBookListFragment"
@@ -20,6 +20,39 @@
         tools:layout="@layout/fragment_library_book_detail">
         <argument
             android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.s160420020_projectuts.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionRegisterFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/actionProfileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.s160420020_projectuts.view.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/actionLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.s160420020_projectuts.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/actionBookListFragment"
+            app:destination="@id/bookListFragment" />
+        <argument
+            android:name="username"
             app:argType="string" />
     </fragment>
 </navigation>

@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         private var instance:MainActivity ?= null
         fun showNotif(title:String, content:String, icon:Int){
             val channelId = "${instance?.packageName}-${instance?.getString(R.string.app_name)}"
-
             val builder = NotificationCompat.Builder(
                 instance!!.applicationContext, channelId).apply {
                 setSmallIcon(icon)

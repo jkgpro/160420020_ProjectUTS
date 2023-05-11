@@ -7,3 +7,9 @@ data class Book (
      val description:String?,
      val photoUrl:String?
 )
+data class Login (
+     val id:String?,
+     val username:String?,
+     val password:String?,
+     val alamat:String?
+     )
